@@ -1,0 +1,15 @@
+public class MainApp {
+    public static void main(String[] args) {
+        EmployeeService service = new EmployeeService();
+
+        // Adding sample data
+        service.addEmployee(new Employee(1, "Alice", "IT", 75000));
+        service.addEmployee(new Employee(2, "Bob", "HR", 50000));
+        service.addEmployee(new Employee(3, "Charlie", "IT", 80000));
+        service.addEmployee(new Employee(4, "Diana", "Finance", 90000));
+
+        service.printEmployeesByDepartment("IT");
+        service.printAverageSalary();
+        service.printHighestPaidEmployee();
+    }
+}
